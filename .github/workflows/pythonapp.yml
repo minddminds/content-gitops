@@ -23,6 +23,6 @@ jobs:
     - name: Build & Push Image
       run: |
         cd ./python
-        docker login -username=minddminds --password=${{ secrets.DOCKERPW }}
-        docker image build -t minddminds/gitops:hellov1.2 .
-        docker push minddminds/gitops:hellov1.2
+        docker login -username=ajaws1408 --password=${{ secrets.DOCKERPW }}
+        docker image build -t ajaws1408/gitops:hellov1.2 .
+        docker push ajaws1408/gitops:hellov1.2
